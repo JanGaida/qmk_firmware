@@ -3,5 +3,53 @@
         {
             "path": "."
         }
-    ]
+    ],
+
+    "settings": {
+        // MARK: Peacock
+        "workbench.colorCustomizations": {
+            "activityBar.activeBackground": "#353535",
+            "activityBar.background": "#353535",
+            "activityBar.foreground": "#e7e7e7",
+            "activityBar.inactiveForeground": "#e7e7e799",
+            "activityBarBadge.background": "#787828",
+            "activityBarBadge.foreground": "#e7e7e7",
+            "commandCenter.border": "#e7e7e799",
+            "editorGroup.border": "#353535",
+            "sash.hoverBorder": "#353535",
+            "statusBar.background": "#1c1c1c",
+            "statusBar.foreground": "#e7e7e7",
+            "statusBarItem.hoverBackground": "#353535",
+            "statusBarItem.remoteBackground": "#1c1c1c",
+            "statusBarItem.remoteForeground": "#e7e7e7",
+            "titleBar.activeBackground": "#1c1c1c",
+            "titleBar.activeForeground": "#e7e7e7",
+            "titleBar.inactiveBackground": "#1c1c1c99",
+            "titleBar.inactiveForeground": "#e7e7e799"
+        },
+        "peacock.remoteColor": "#1C1C1C",
+        "peacock.color": "#1C1C1C",
+
+        // MARK: Terminal
+        "terminal.integrated.profiles.windows": {
+            "QMK_MSYS": {
+                "path": "C:/QMK_MSYS/usr/bin/bash.exe",
+                "env": {
+                    "MSYSTEM": "MINGW64",
+                    "CHERE_INVOKING": "1"
+                },
+                "args": [ "--login" ]
+            }
+        },
+        "terminal.integrated.cursorStyle": "line",
+
+        // MARK: TaskManager
+        "taskManager.exclude": "builddefs/.*",
+
+        // MARK: Unsorted
+        "cSpell.words": [
+            "nkro",
+            "splitkb"
+        ]
+    }
 }

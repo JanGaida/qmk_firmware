@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "env": {
+            "QMK_ROOT": "${workspaceFolder}",
+            "QMK_KB": "janga/halcyon_elora/rev2",
+            "QMK_KM": "default2",
+            "MSYSTEM": "MINGW64",
+            "CHERE_INVOKING": "1"
+        }
+    },
+    "tasks": [
+        {
+            "label": "GIT: 📦 Setup Git",
+            "type": "shell",
+            "command": "${workspaceFolder}/.devcontainer/setup-git.sh",
+            "problemMatcher": [ ]
+        },
+        /*
+        {
+            "label": "QMK: 🚀 Compile Firmware",
+            "type": "shell",
+            "command": "C:/QMK_MSYS/usr/bin/bash.exe",
+            "args": [
+                "--login",
+                "-c",
+                "cd \"$QMK_ROOT\" && qmk compile -kb \"$QMK_KB\" -km \"$QMK_KM\""
+            ],
+            "problemMatcher": [ ]
+        },
+        {
+            "label": "QMK: 📐 Generate Complie-Db",
+            "type": "shell",
+            "command": "C:/QMK_MSYS/usr/bin/bash.exe",
+            "args": [
+                "--login",
+                "-c",
+                "cd \"$QMK_ROOT\" && qmk compile -kb \"$QMK_KB\" -km \"$QMK_KM\" --compiledb"
+            ],
+            "problemMatcher": [ ]
+        },
+        {
+            "label": "QMK: 🧹 Clean",
+            "type": "shell",
+            "command": "C:/QMK_MSYS/usr/bin/bash.exe",
+            "args": [
+                "--login",
+                "-c",
+                "cd \"$QMK_ROOT\" && qmk clean"
+            ],
+            "problemMatcher": [ ]
+        }
+        */
+    ]
+}
