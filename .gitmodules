@@ -25,3 +25,6 @@
 	path = lib/lvgl
 	url = https://github.com/qmk/lvgl.git
 	branch = release/v8.2
+[submodule "users/halcyon_userspace"]
+	path = users/halcyon_userspace
+	url = https://github.com/JanGaida/qmk_userspace.git

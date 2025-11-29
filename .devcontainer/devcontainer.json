@@ -1,0 +1,74 @@
+{
+    "name": "QMK Dev Container"
+    ,"image": "ghcr.io/qmk/qmk_cli"
+
+    ,"remoteUser": "vscode"
+    ,"containerUser": "vscode"
+
+    ,"customizations": {
+        "vscode": {
+            "extensions": [
+                // MARK: Remote Containers
+                "ms-vscode-remote.remote-containers",
+                //"dreamcatcher45.podmanager",
+
+                // MARK: Git
+                //"alefragnani.project-manager",
+                "mhutchie.git-graph",
+                //"ziyasal.vscode-open-in-github",
+                //"dunstontc.vscode-gitignore-syntax",
+
+                // MARK: Editor
+                //"cloudbyte.better-byte",
+                //"JeronimoEkerdt.color-picker-universal",
+                "EditorConfig.EditorConfig",
+                "humao.rest-client",
+                "jrebocho.vscode-random",
+
+                // MARK: Explorer
+                "amodio.toggle-excluded-files",
+                "christian-kohler.path-intellisense",
+
+                // MARK: Tasks
+                "cnshenj.vscode-task-manager",
+
+                // MARK: I18n
+                "streetsidesoftware.code-spell-checker-scientific-terms",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-german",
+                "streetsidesoftware.code-spell-checker-medical-terms",
+                "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
+                "streetsidesoftware.code-spell-checker-win32",
+
+                // MARK: C++
+                "xaver.clang-format",
+                "llvm-vs-code-extensions.vscode-clangd"
+            ]
+        }
+    }
+
+    ,"postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/setup.sh ${containerWorkspaceFolder}"
+
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    ,"features": {
+        // @see https://github.com/devcontainers/features/tree/main/src/common-utils
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "username": "vscode",
+            "uid": 1000,
+            "gid": 1000,
+            "installZsh": false,
+            "configureZshAsDefaultShell": false,
+            "installOhMyZsh": false,
+            "installOhMyZshConfig": false
+        }
+    }
+
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+
+    // Configure tool-specific properties.
+    // "customizations": {},
+
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+}
