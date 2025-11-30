@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-# Bash strict
+# bash: strict mode
 set -eEuo pipefail
 
-# Git Setup
-/workspaces/qmk_firmware/.devcontainer/setup-git.sh
+# ----------------------------------------------------------------------------
 
-#qmk git-submodule
+# Git Setup
+.devcontainer/setup-git.sh
+
+# QMK Configs
+.devcontainer/setup-qmk.sh
 
