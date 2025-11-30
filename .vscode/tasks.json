@@ -2,20 +2,40 @@
     "version": "2.0.0",
     "options": {
         "env": {
-            "QMK_ROOT": "${workspaceFolder}",
-            "QMK_KB": "janga/halcyon_elora/rev2",
-            "QMK_KM": "default2",
-            "MSYSTEM": "MINGW64",
-            "CHERE_INVOKING": "1"
+            "QMK_ROOT": "${workspaceFolder}"
         }
     },
     "tasks": [
         {
-            "label": "GIT: 📦 Setup Git",
+            "label": "\u200B GIT: 📦 Setup git repo",
             "type": "shell",
             "command": "${workspaceFolder}/.devcontainer/setup-git.sh",
             "problemMatcher": [ ]
         },
+        {
+            "label": "\u200C QMK: ⚡ Setup qmk",
+            "type": "shell",
+            "command": "${workspaceFolder}/.devcontainer/setup-qmk.sh",
+            "problemMatcher": [ ]
+        },
+        {
+            "label": "\u200D QMK: ⚡ Make compile-db",
+            "type": "shell",
+            "command": "qmk compile --compiledb",
+            "problemMatcher": [ ]
+        },
+        {
+            "label": "\u200E QMK: 🩺 Run doctor",
+            "type": "shell",
+            "command": "qmk doctor",
+            "problemMatcher": [ ]
+        },
+        {
+            "label": "\u200F QMK: 🏗️ Run compile",
+            "type": "shell",
+            "command": "${workspaceFolder}/.devcontainer/compile.sh",
+            "problemMatcher": [ ]
+        }
         /*
         {
             "label": "QMK: 🚀 Compile Firmware",

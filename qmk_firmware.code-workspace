@@ -50,6 +50,18 @@
         "cSpell.words": [
             "nkro",
             "splitkb"
-        ]
+        ],
+
+        // MARK: Files
+        "files.exclude": {
+            ".build/**": true,
+            ".git/**": true,
+            ".github/**": true,
+            "docs/**": true,
+            "**/*.uf2": false,
+        },
+
+        // MARK: Git
+        "git.branchProtection": [],
     }
 }

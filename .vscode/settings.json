@@ -4,10 +4,11 @@
     "editor.insertSpaces": true,
     // Configure glob patterns for excluding files and folders.
     "files.exclude": {
-        "**/.build": true,
-        "**/*.hex": true,
-        "**/*.bin": true,
-        "**/*.uf2": true
+        // As these can not be overwritten: disable all rules here --> use workspace-settings instead!
+        //"**/.build": true,
+        //"**/*.hex": true,
+        //"**/*.bin": true,
+        //"**/*.uf2": true
     },
     "files.associations": {
         // QMK Filetypes
