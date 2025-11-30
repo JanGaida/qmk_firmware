@@ -77,7 +77,7 @@ if [ -n "$(git status --porcelain)" ]; then
     blocked_merge=$((blocked_merge + 1))
 else
     set +e
-    git rebase "$GIT_UPSTREAM_NAME/$GIT_UPSTREAM_QMK_FIRMWARE_BRANCH"
+    git merge "$GIT_UPSTREAM_NAME/$GIT_UPSTREAM_QMK_FIRMWARE_BRANCH"
     merge_exit_code=$?
     set -e
     if [ $merge_exit_code -ne 0 ]; then
@@ -102,7 +102,7 @@ if [ -d "$USER_SPACE_DIR" ]; then
             blocked_merge=$((blocked_merge + 1))
         else
             set +e
-            git rebase "$GIT_UPSTREAM_NAME/$GIT_UPSTREAM_HALYCON_USERSPACE_BRANCH"
+            git merge "$GIT_UPSTREAM_NAME/$GIT_UPSTREAM_HALYCON_USERSPACE_BRANCH"
             merge_exit_code=$?
             set -e
             if [ $merge_exit_code -ne 0 ]; then
