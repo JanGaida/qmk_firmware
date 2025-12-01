@@ -19,6 +19,12 @@
             "problemMatcher": [ ]
         },
         {
+            "label": "\u200B QMK: 🚑 Run doctor",
+            "type": "shell",
+            "command": "qmk doctor",
+            "problemMatcher": [ ]
+        },
+        {
             "label": "\u200C QMK: ⚡ Setup qmk",
             "type": "shell",
             "command": "${workspaceFolder}/.devcontainer/setup-qmk.sh",
@@ -31,51 +37,10 @@
             "problemMatcher": [ ]
         },
         {
-            "label": "\u200E QMK: 🩺 Run doctor",
-            "type": "shell",
-            "command": "qmk doctor",
-            "problemMatcher": [ ]
-        },
-        {
             "label": "\u200F QMK: 🏗️ Run compile",
             "type": "shell",
             "command": "${workspaceFolder}/.devcontainer/compile.sh",
             "problemMatcher": [ ]
         }
-        /*
-        {
-            "label": "QMK: 🚀 Compile Firmware",
-            "type": "shell",
-            "command": "C:/QMK_MSYS/usr/bin/bash.exe",
-            "args": [
-                "--login",
-                "-c",
-                "cd \"$QMK_ROOT\" && qmk compile -kb \"$QMK_KB\" -km \"$QMK_KM\""
-            ],
-            "problemMatcher": [ ]
-        },
-        {
-            "label": "QMK: 📐 Generate Complie-Db",
-            "type": "shell",
-            "command": "C:/QMK_MSYS/usr/bin/bash.exe",
-            "args": [
-                "--login",
-                "-c",
-                "cd \"$QMK_ROOT\" && qmk compile -kb \"$QMK_KB\" -km \"$QMK_KM\" --compiledb"
-            ],
-            "problemMatcher": [ ]
-        },
-        {
-            "label": "QMK: 🧹 Clean",
-            "type": "shell",
-            "command": "C:/QMK_MSYS/usr/bin/bash.exe",
-            "args": [
-                "--login",
-                "-c",
-                "cd \"$QMK_ROOT\" && qmk clean"
-            ],
-            "problemMatcher": [ ]
-        }
-        */
     ]
 }
