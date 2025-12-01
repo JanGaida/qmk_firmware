@@ -64,9 +64,9 @@ HALCYON_MODULE_TARGET_DIR="users/halcyon_modules/splitkb"
 HALCYON_MODULE_SOURCE_DIR="users/halcyon_userspace/users/halcyon_modules/splitkb"
 HALCYON_MODULE_INFO_FILE="halcyon_modules.version"
 HALCYON_MODULE_INFO_ROOT="${QMK_ROOT}/users/halcyon_modules"
-#USER_SPACE_MODULES=(
-#    #"HLC_NONE"
-#    #"HLC_TFT_DISPLAY"
-#    "HLC_ENCODER"
-#    "HLC_CIRQUE_TRACKPAD"
-#)
+HALCYON_MODULES=(
+    #"HLC_NONE"
+    #"HLC_TFT_DISPLAY"
+    "HLC_ENCODER"
+    "HLC_CIRQUE_TRACKPAD"
+)

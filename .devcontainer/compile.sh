@@ -29,7 +29,7 @@ mkdir -p "$output_dir"
 echo -e "${BOLD}${BLUE}${log_prefix} Output directory: ${output_dir}${NC}"
 
 # cmpl: each module
-for module in "${USER_SPACE_MODULES[@]}"; do
+for module in "${HALCYON_MODULES[@]}"; do
     # prep
     sanitized_keymap=$(echo "$QMK_KEYMAP" | sanitize)
     sanitized_module=$(echo "$module" | sanitize)
