@@ -54,11 +54,14 @@
 
         // MARK: Files
         "files.exclude": {
+            ".cache/**": true,
             ".build/**": true,
             ".git/**": true,
             ".github/**": true,
             "docs/**": true,
             "**/*.uf2": false,
+            "users/_example": true,
+            "users/readme.md": true
         },
 
         // MARK: Git

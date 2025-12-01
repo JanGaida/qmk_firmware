@@ -130,4 +130,4 @@ via*.json
 # MARK: Custom overrides
 !*.code-workspace
 !tasks.json
-#.output/
+users/halcyon_modules/splitkb/*

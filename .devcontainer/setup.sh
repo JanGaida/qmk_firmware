@@ -5,9 +5,11 @@ set -eEuo pipefail
 
 # ----------------------------------------------------------------------------
 
-# Git Setup
+# Setup git
 .devcontainer/setup-git.sh
 
-# QMK Configs
+# Setup qmk
 .devcontainer/setup-qmk.sh
 
+# Update codebase
+.devcontainer/update-codebase.sh

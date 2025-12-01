@@ -36,9 +36,9 @@ fi
 
 # cfg: qmk
 QMK_ROOT="/workspaces/qmk_firmware"
-QMK_KEYBOARD="splitkb/halcyon/elora/rev2"
+QMK_KEYBOARD="jangaida/halcyon_elora"
 QMK_KEYMAP="default"
-QMK_USER="JanGaida"
+QMK_USER="jangaida"
 QMK_OUTPUT_ROOT="${QMK_ROOT}/.output"
 
 # cfg: repositories
@@ -46,7 +46,7 @@ GIT_UPSTREAM_QMK_FIRMWARE="https://github.com/qmk/qmk_firmware.git"
 GIT_UPSTREAM_QMK_FIRMWARE_BRANCH="master"
 GIT_FORK_HALYCON_USERSPACE="https://github.com/JanGaida/qmk_userspace.git"
 GIT_UPSTREAM_HALYCON_USERSPACE="https://github.com/splitkb/qmk_userspace.git"
-GIT_UPSTREAM_HALYCON_USERSPACE_BRANCH="halcyon"
+GIT_UPSTREAM_HALYCON_USERSPACE_BRANCH="halcyon-qmk"
 
 # cfg: git
 GIT_CORE_EDITOR="nano"
@@ -59,13 +59,14 @@ SPARSE_KEYBOARDS_TO_KEEP=(
     "$QMK_USER"
 )
 
-# cfg: userspace
-USER_SPACE_DIR="users/halcyon_userspace"
-USER_SPACE_JSON="qmk.json"
-USER_SPACE_EMPTY_JSON="qmk_empty.json"
-USER_SPACE_MODULES=(
-    #"HLC_NONE"
-    #"HLC_TFT_DISPLAY"
-    "HLC_ENCODER"
-    "HLC_CIRQUE_TRACKPAD"
-)
+# cfg: halcyon-module
+HALCYON_MODULE_TARGET_DIR="users/halcyon_modules/splitkb"
+HALCYON_MODULE_SOURCE_DIR="users/halcyon_userspace/users/halcyon_modules/splitkb"
+HALCYON_MODULE_INFO_FILE="halcyon_modules.version"
+HALCYON_MODULE_INFO_ROOT="${QMK_ROOT}/users/halcyon_modules"
+#USER_SPACE_MODULES=(
+#    #"HLC_NONE"
+#    #"HLC_TFT_DISPLAY"
+#    "HLC_ENCODER"
+#    "HLC_CIRQUE_TRACKPAD"
+#)

@@ -7,9 +7,15 @@
     },
     "tasks": [
         {
-            "label": "\u200B GIT: 📦 Setup git repo",
+            "label": "\u200A GIT: 📦 Setup git repo",
             "type": "shell",
             "command": "${workspaceFolder}/.devcontainer/setup-git.sh",
+            "problemMatcher": [ ]
+        },
+        {
+            "label": "\u200B GIT: 🚀 Update codebase",
+            "type": "shell",
+            "command": "${workspaceFolder}/.devcontainer/update-codebase.sh",
             "problemMatcher": [ ]
         },
         {
